@@ -1,0 +1,4 @@
+/public/assets/*
+/.git/*
+.DS_Store
+Thumbs.db
