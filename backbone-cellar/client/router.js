@@ -2,7 +2,7 @@
 var Backbone        = require('backbone'),
     React           = require('react'),
 
-    Hello           = require('./hello');
+    Hello           = require('./components/hello');
 
 // http://stackoverflow.com/a/19529354
 Backbone.$ = require('jquery');
