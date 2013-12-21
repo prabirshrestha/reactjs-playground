@@ -1,3 +1,3 @@
 var App = require('app');
 
-new App();
+new App(document.body);

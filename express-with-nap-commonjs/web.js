@@ -17,10 +17,10 @@ nap.preprocessors['.jsx'] = function (contents, file) {
     }
 
     return (
-        '(function() { var modules = {}; ' +
+        ';(function() { var modules = {}; ' +
         'modules["' + key + '"] = function(exports, require, module) {' +
         ReactTools.transform(contents)
-        + ' }; Stitch(modules); })();'
+        + '}; Stitch(modules); })();'
     );
 };
 
