@@ -1,1 +1,3 @@
-require('app');
+var App = require('app');
+
+new App();

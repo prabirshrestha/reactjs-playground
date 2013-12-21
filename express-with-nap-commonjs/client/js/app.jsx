@@ -2,4 +2,6 @@
 var React = require('react'),
     Hello = require('hello');
 
-React.renderComponent(<Hello/>, document.body);
+module.exports = function () {
+    React.renderComponent(<Hello/>, document.body);
+};
