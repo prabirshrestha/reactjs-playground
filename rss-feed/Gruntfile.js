@@ -7,7 +7,8 @@ module.exports = function(grunt) {
         browserify: {
             options: {
                 debug: true,
-                transform: [ 'reactify' ]
+                transform: [ 'reactify' ],
+                external: [ 'jquery' ],
             },
             app: {
                 src:  'client/app.js',
