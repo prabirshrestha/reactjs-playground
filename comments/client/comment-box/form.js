@@ -13,6 +13,10 @@ var CommentForm = React.createClass({
             return false;
         }
 
+        if(this.props.onCommentSubmit) {
+            this.props.onCommentSubmit({ author: author, text: text });
+        }
+
         $author.value = '';
         $text.value = '';
 
