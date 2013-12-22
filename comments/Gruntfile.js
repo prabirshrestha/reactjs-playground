@@ -15,6 +15,16 @@ module.exports = function(grunt) {
             }
         },
 
+        connect: {
+            server: {
+                options: {
+                    port: 3000,
+                    hostname: '*',
+                    base: 'public'
+                }
+            }
+        },
+
         watch: {
           files: [ 'client/**/*.js' ],
           tasks: [ 'browserify' ]
@@ -23,6 +33,9 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('default', ['connect', 'watch']);
 
 };
