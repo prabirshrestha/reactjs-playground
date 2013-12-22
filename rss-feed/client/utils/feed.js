@@ -1,3 +1,4 @@
+var $ = require('jquery');
 
 exports.get = function getFeed(feedUrl, callback) {
     var url = 'http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=150&callback=?&q=' + encodeURIComponent(feedUrl);

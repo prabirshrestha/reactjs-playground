@@ -8,7 +8,10 @@ module.exports = function(grunt) {
             options: {
                 debug: true,
                 transform: [ 'reactify' ],
-                external: [ 'jquery' ],
+                // external: [ 'jquery' ],
+                alias: [
+                    'client/shims/jquery.js:jquery'
+                ]
             },
             app: {
                 src:  'client/app.js',
