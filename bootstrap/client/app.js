@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
-var React = require('react'),
+var React       = require('react'),
 
-    Button = require('./bootstrap/button');
+    Button      = require('./bootstrap/button');
 
 React.renderComponent(
     <div>
